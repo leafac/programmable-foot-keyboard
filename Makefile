@@ -1,14 +1,11 @@
-.PHONY: documentation documentation/deploy documentation/clean clean
+.PHONY: documentation documentation/deploy
 
-documentation: compiled-documentation/index.html
+project = programmable-foot-keyboard
 
-compiled-documentation/index.html: documentation/programmable-foot-keyboard.scrbl
-	cd documentation && raco scribble --dest ../compiled-documentation/ --dest-name index -- programmable-foot-keyboard.scrbl
+documentation: documentation/index.html
+
+documentation/index.html: documentation/$(project).scrbl
+	cd documentation && raco scribble --dest-name index -- $(project).scrbl
 
 documentation/deploy: documentation
-	rsync -av --delete compiled-documentation/ leafac.com:leafac.com/websites/software/programmable-foot-keyboard/
-
-documentation/clean:
-	rm -rf compiled-documentation
-
-clean: documentation/clean
+	rsync -av --delete documentation/ leafac.com:leafac.com/websites/software/$(project)/
