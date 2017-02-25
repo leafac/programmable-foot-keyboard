@@ -63,11 +63,11 @@ Each of the buttons acts as a key on the computer keyboard. Pressing both button
 @tabular[#:style 'boxed
          #:sep @hspace[1]
          #:row-properties '(bottom-border)
-         `((, @bold{Bank} , @bold{Left button} , @bold{Right button} , @bold{Purpose})
-           ("0" "↑" "↓" "Scroll")
-           ("1" "" "R" "Start/stop recording")
-           ("2" "⇧ ^ ⇥" "^ ⇥" "Switch tabs")
-           ("3" "⇧ ⌘ ⇥" "⌘ ⇥" "Switch applications"))]
+         `((, @bold{Bank} , @bold{Left button} , @bold{Right button})
+           ("Scroll" "↑" "↓")
+           ("Record" "" "R")
+           ("Switch tabs" "⇧ ^ ⇥" "^ ⇥")
+           ("Switch windows" "⇧ ⌘ ⇥" "⌘ ⇥"))]
 
 @section[#:tag "configuration"]{Configuration}
 
@@ -76,5 +76,9 @@ Configure by changing the source code and uploading it again.
 @section[#:tag "references"]{References}
 
 @itemlist[
- @item{
-  @hyperlink["https://learn.adafruit.com/trinket-usb-keyboard"]{Trinket USB Keyboard}. Adafruit.}]
+ @item{@hyperlink["https://learn.adafruit.com/trinket-usb-keyboard"]{https://learn.adafruit.com/trinket-usb-keyboard}}
+ @item{@hyperlink["https://learn.adafruit.com/trinket-usb-keyboard/code"]{https://learn.adafruit.com/trinket-usb-keyboard/code}}
+ @item{@hyperlink["https://learn.adafruit.com/trinket-usb-keyboard/prank-example"]{https://learn.adafruit.com/trinket-usb-keyboard/prank-example}}
+ @item{@hyperlink["https://github.com/adafruit/Adafruit-Trinket-USB/"]{https://github.com/adafruit/Adafruit-Trinket-USB/}}
+ @item{@hyperlink["https://github.com/adafruit/Adafruit-Trinket-USB/blob/51f208bc569dd79d7357f16d548ed0c43f4927e8/TrinketKeyboard/TrinketKeyboard.h"]{https://github.com/adafruit/Adafruit-Trinket-USB/blob/51f208bc569dd79d7357f16d548ed0c43f4927e8/TrinketKeyboard/TrinketKeyboard.h}}
+]
