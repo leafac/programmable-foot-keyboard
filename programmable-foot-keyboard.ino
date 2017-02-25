@@ -1,5 +1,5 @@
 #include <TrinketKeyboard.h>
-#define KEYBOARD_NONE 0
+#define KEYCODE_NONE 0
 
 // CONFIGURATION ///////////////////////////////////////////////
 
@@ -7,9 +7,9 @@
 
 const uint8_t banks[][2][2] = {
   // Scroll
-  {{KEYBOARD_NONE, KEYCODE_ARROW_UP}, {KEYBOARD_NONE, KEYCODE_ARROW_DOWN}},
+  {{KEYCODE_NONE, KEYCODE_ARROW_UP}, {KEYCODE_NONE, KEYCODE_ARROW_DOWN}},
   // Record
-  {{KEYBOARD_NONE, KEYBOARD_NONE}, {KEYBOARD_NONE, KEYCODE_R}},
+  {{KEYCODE_NONE, KEYCODE_NONE}, {KEYCODE_NONE, KEYCODE_R}},
   // Switch tabs
   {{KEYCODE_MOD_LEFT_CONTROL | KEYCODE_MOD_LEFT_SHIFT, KEYCODE_TAB}, {KEYCODE_MOD_LEFT_CONTROL, KEYCODE_TAB}},
   // Switch windows
@@ -67,7 +67,7 @@ void loop() {
   if (! isPressed(BUTTON_0) && ! isPressed(BUTTON_1)) {
     if (currentPressingState != PRESSING_STATE_INITIAL) {
       currentPressingState = PRESSING_STATE_INITIAL;
-      TrinketKeyboard.pressKey(KEYBOARD_NONE, KEYBOARD_NONE);
+      TrinketKeyboard.pressKey(KEYCODE_NONE, KEYCODE_NONE);
     }
     return;
   }
