@@ -15,6 +15,7 @@ const uint8_t banks[][2][2] = {
   // Switch windows
   {{KEYCODE_MOD_LEFT_GUI | KEYCODE_MOD_LEFT_SHIFT, KEYCODE_TAB}, {KEYCODE_MOD_LEFT_GUI, KEYCODE_TAB}},
 };
+const byte banksCount = 4;
 
 // Buttons
 
@@ -81,7 +82,7 @@ void loop() {
       if (pressedFor(DELAY_UNTIL_PRESSED)) {
         currentPressingState = PRESSING_STATE_PRESSED;
         if (isPressed(BUTTON_0) && isPressed(BUTTON_1)) {
-          currentBank = (currentBank + 1) % (sizeof(banks) / sizeof(banks[2][2]));
+          currentBank = (currentBank + 1) % banksCount;
         } else if (isPressed(BUTTON_0)) {
           TrinketKeyboard.pressKey(banks[currentBank][0][0], banks[currentBank][0][1]);
         } else if (isPressed(BUTTON_1)) {
