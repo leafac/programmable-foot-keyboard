@@ -64,8 +64,8 @@ Each of the buttons acts as a key on the computer keyboard. Pressing both button
          #:sep @hspace[1]
          #:row-properties '(bottom-border)
          `((, @bold{Bank} , @bold{Left button} , @bold{Right button})
+           ("Record" "O" "R")
            ("Scroll" "↑" "↓")
-           ("Record" "" "R")
            ("Switch tabs" "⇧ ^ ⇥" "^ ⇥")
            ("Switch windows" "⇧ ⌘ ⇥" "⌘ ⇥"))]
 
