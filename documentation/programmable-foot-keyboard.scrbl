@@ -1,6 +1,6 @@
 #lang scribble/manual
 
-@title{Programmable Foot Keyboard}
+@title{[ARCHIVED] Programmable Foot Keyboard}
 @author{@author+email["Leandro Facchinetti" "me@leafac.com"]}
 
 @emph{A programmable foot keyboard using @hyperlink["https://learn.adafruit.com/introducing-trinket"]{Adafruit’s Trinket}.}
