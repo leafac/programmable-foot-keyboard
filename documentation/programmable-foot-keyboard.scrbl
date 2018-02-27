@@ -82,3 +82,7 @@ Configure by changing the source code and uploading it again.
  @item{@hyperlink["https://github.com/adafruit/Adafruit-Trinket-USB/"]{https://github.com/adafruit/Adafruit-Trinket-USB/}}
  @item{@hyperlink["https://github.com/adafruit/Adafruit-Trinket-USB/blob/51f208bc569dd79d7357f16d548ed0c43f4927e8/TrinketKeyboard/TrinketKeyboard.h"]{https://github.com/adafruit/Adafruit-Trinket-USB/blob/51f208bc569dd79d7357f16d548ed0c43f4927e8/TrinketKeyboard/TrinketKeyboard.h}}
 ]
+
+@section[#:tag "changelog/archived"]{Archived · 2018-02-27}
+
+This project is archived and no longer maintained.
